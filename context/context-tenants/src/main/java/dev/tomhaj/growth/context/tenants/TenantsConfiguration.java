@@ -8,5 +8,4 @@ import org.springframework.context.annotation.Configuration;
 @EnableConfigurationProperties(TenantsProperties.class)
 @ComponentScan(basePackages = "dev.tomhaj.growth.context.tenants")
 public class TenantsConfiguration {
-
 }
