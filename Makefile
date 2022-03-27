@@ -1,5 +1,13 @@
 default: .help
 
+lint:
+	@ mvn clean compile checkstyle:check spotbugs:check
+
+test:
+	@ mvn clean verify
+
+check: lint test
+
 .help:
 	@echo "\n\
 	Help:\n\

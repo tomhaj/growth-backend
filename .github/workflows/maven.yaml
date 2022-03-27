@@ -13,5 +13,5 @@ jobs:
           java-version: 17
           distribution: zulu
           cache: maven
-      - name: Build mvn
-        run: mvn -B clean verify
+      - name: Build
+        run: mvn -B clean compile checkstyle:check spotbugs:check verify
